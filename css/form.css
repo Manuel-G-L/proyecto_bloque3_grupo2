@@ -1,0 +1,167 @@
+/* NAVBAR + TÍTULO ANIMADO */
+
+/* Barra general */
+.barra-color {
+  background: linear-gradient(to right, #63d471, hsl(0, 0%, 0%));
+  display: flex;
+  align-items: center;
+  height: 80px;
+  padding: 0 30px;
+}
+
+/* Título DropShop */
+.loader {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 50px;
+  background: radial-gradient(circle closest-side, #fff4f4 94%, hsla(0, 0%, 4%, 0)) right / calc(200% - 1em) 100%;
+  animation: l24 1s infinite alternate linear;
+  margin: 0;
+}
+
+.loader::before {
+  content: "DropShop";
+  font-size: 40px;
+  color: transparent;
+  background: inherit;
+  background-image: radial-gradient(circle closest-side, #060606 94%, #ffffff);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+@keyframes l24 {
+  100% {
+    background-position: left;
+  }
+}
+
+/* FORMULARIO MINIMALISTA GRIS */
+
+body {
+  background-color: #f3f3f3;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor general */
+.form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 120px; /* espacio para el navbar */
+}
+
+/* Caja del formulario */
+.form-container {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px 50px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
+/* Título */
+.form-container h2 {
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+/* Inputs */
+.input-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  background: #f7f7f7;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.input-group input:focus {
+  border-color: #888;
+  background: #fff;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(120, 120, 120, 0.1);
+}
+
+/* Botón */
+.btn-submit {
+  background: linear-gradient(135deg, #666, #888);
+  color: #fff;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+  background: linear-gradient(135deg, #555, #777);
+}
+
+/* Texto alternativo */
+.alt-text {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.alt-text a {
+  color: #333;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.alt-text a:hover {
+  text-decoration: underline;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVO */
+@media (max-width: 500px) {
+  .form-container {
+    padding: 30px 25px;
+  }
+
+  .loader::before {
+    font-size: 32px;
+  }
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #212529;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
