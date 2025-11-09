@@ -480,6 +480,14 @@ h2 {
   }
 }
 
+/* ---------------------------------------------------------------------------------------------- */
 
-
- 
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #212529;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
