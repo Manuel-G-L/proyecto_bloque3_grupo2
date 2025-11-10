@@ -483,6 +483,7 @@ h2 {
 /* ---------------------------------------------------------------------------------------------- */
 
 /* Footer */
+<<<<<<< HEAD
 ul {
   list-style: none;
 }
@@ -587,3 +588,13 @@ ul {
 #footer {
   background-color: #212529;
 }
+=======
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #212529;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+>>>>>>> 1a1fa519c5b4a41098a9a66eaced72530b86748b
